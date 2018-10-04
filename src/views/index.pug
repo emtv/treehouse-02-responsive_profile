@@ -32,7 +32,7 @@ html(lang='en')
 		section.main.container
 			#description.profile-description
 				.profile-excerpt
-					article
+					div
 						p Hi! I'm a fron-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am exited to put all my skills to use!
 				.profile-avatar
 					img(src="assets/images/responsive-layout-profile.png", alt="Avatar of Edgardo Tupiño")
@@ -70,9 +70,6 @@ html(lang='en')
 							img(src="assets/images/portfolio-6.png", alt="Portfolio 6")
 						h3.card-title Calculator
 						p.card-description Someone can enter in the numbers they want, and press the big blue button and get the result.								
-			#skills.profile-skills
-
-
 			#contact.profile-contact
 				.profile-subtitle
 					h2.subtitle Contact
@@ -87,25 +84,23 @@ html(lang='en')
 						p Email
 						p 
 							a(href="mailto:edgardo@tupino.com") edgardo@tupino.com
+		footer
+			hr
+			.profile-footer
+				.profile-footer_logo
+					p Edgardo Tupiño
+				.profile-footer_nav
+					ul.nav-container
+						li.nav-item
+							a.scroll(href="#home") Home
+						li.nav-item
+							a.scroll(href="#portfolio") Portfolio
+						li.nav-item
+							a.scroll(href="#contact") Contact
+				.profile-footer_button__top
+					p
+						a.scroll(href="#home") BACK TO TOP
 
 
-	footer
-		hr
-		.profile-footer
-			.profile-footer_logo
-				p Edgardo Tupiño
-			.profile-footer_nav
-				ul.nav-container
-					li.nav-item
-						a.scroll(href="#home") Home
-					li.nav-item
-						a.scroll(href="#portfolio") Portfolio
-					li.nav-item
-						a.scroll(href="#contact") Contact
-			.profile-footer_button__top
-				p
-					a.scroll(href="#home") BACK TO TOP
-
-
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-		script(src="js/app.js")
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+			script(src="js/app.js")

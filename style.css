@@ -1,0 +1,306 @@
+/*
+Project Name: Personal Responsive Profile
+Theme URI: https://edgardo.tupino.com
+Version: 1.0.0
+Description: Project for Treehouse Techdegree 
+Author: EdgardoT.
+Author URI: http://edgardo.tupino.com
+Tags: Personal Responsive Site
+*/
+/*----------------- START CUSTOM STYLES HERE -------------------------------*/
+/* ===================
+ * IMPORT COMPONENTS
+ * ===================
+ */
+a:visited {
+  color: inherit;
+}
+body {
+  font-family: 'Nunito', sans-serif !important;
+  background: #f4f4f4;
+}
+.profile-description {
+  padding: 0 1em;
+}
+@media (min-width: 768px) {
+  .profile-description {
+    padding: 0 3em;
+  }
+}
+.profile-container {
+  padding: 0 1em;
+}
+@media (min-width: 768px) {
+  .profile-container {
+    padding: 0 3em;
+  }
+}
+.profile-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.profile-excerpt {
+  font-family: 'Montserrat', sans-serif !important;
+  line-height: 1.5;
+  color: #898989;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: center;
+}
+.profile-avatar {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  text-align: center;
+}
+.profile-avatar img {
+  width: 70%;
+}
+.subtitle {
+  color: #474747;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.85em !important;
+  padding: 3em 0;
+}
+.profile-portfolio {
+  background: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .profile-description {
+    margin-bottom: 3em;
+  }
+  .profile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .profile-avatar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 40%;
+  }
+  .profile-avatar img {
+    width: 100%;
+  }
+  .profile-excerpt {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 60%;
+    text-align: left;
+  }
+  .profile-excerpt article p {
+    padding: 0 5rem 0 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profile-excerpt article p {
+    font-size: 1.5rem;
+  }
+}
+.contact-item p {
+  color: #898989;
+}
+.contact-item p a {
+  text-decoration: none;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+.profile-contact_excerpt {
+  color: #898989;
+  text-align: center;
+}
+.profile-contact {
+  padding: 0 1em;
+}
+@media (min-width: 768px) {
+  .profile-contact {
+    padding: 0 3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .profile-contact_excerpt {
+    padding: 0 16%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .profile-contact_excerpt {
+    padding: 0 30%;
+    font-size: 1.1em;
+  }
+}
+hr {
+  opacity: 0.2;
+}
+footer {
+  padding: 0 1em;
+  margin-top: 3em;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 0 3em;
+  }
+}
+.profile-footer_logo {
+  font-weight: 900;
+  color: #444;
+}
+.profile-footer_button__top {
+  font-weight: 900;
+  color: #444;
+}
+.contact-item {
+  display: block;
+  text-align: center;
+}
+.contact-phone p,
+.contact-email p {
+  display: inline-block;
+  margin: 10px;
+}
+.profile-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 0.5em 0;
+}
+.profile-footer_nav {
+  display: none;
+}
+.profile-footer_button__top p a {
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .profile-footer_button__top {
+    display: none;
+  }
+  .profile-footer_nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.nav-container {
+  display: none;
+}
+.nav-mobile-container {
+  list-style: none;
+  padding: 0;
+}
+.nav-mobile-item {
+  padding: 0.85em;
+  margin: 5px 0;
+  background: #fff;
+}
+.nav-mobile-item a {
+  color: #444;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+.profile-header {
+  text-align: center;
+  padding: 0 1em;
+}
+@media (min-width: 768px) {
+  .profile-header {
+    padding: 0 3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .profile-header {
+    margin-bottom: 3em;
+  }
+  .nav-mobile-container {
+    display: none;
+  }
+  .nav-container {
+    list-style: none;
+    padding: 0;
+    display: block;
+  }
+  .nav-container .nav-item {
+    display: inline-block;
+  }
+  .nav-container .nav-item a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .profile-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1%;
+  }
+  .profile-description {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.profile-card picture img {
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+  color: #5a5a5a;
+}
+.card-description {
+  text-align: center;
+  color: #898989;
+  text-align: center;
+  padding: 0 8px 8px 8px;
+  font-size: 1.015rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .profile-card {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .profile-card {
+    width: 30%;
+  }
+}

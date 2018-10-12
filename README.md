@@ -9,7 +9,7 @@ I'm was use gulp for builde the html template with pug and stylus for the css. A
 ## Features
 
 I'm add a simple efect for ligth scrool on the click menu. This is for a better navigation experience.
-I'm changue the bacground color and some text color
+I'm changue the background color and some text color
 
 ## Third Party
 
